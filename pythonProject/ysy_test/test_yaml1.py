@@ -4,12 +4,10 @@
 # @Author  : ysy
 # @Software: PyCharm
 import yaml
-
-
 def test_yaml():
 
     with open('./datas/data.yml') as f:
-        datas=yaml.safe_load(f)
+        datas=yaml.safe_load(f)#将数据流转换成对象
         print(datas)
         print(datas['add'])
         print(datas['name'])
